@@ -1,0 +1,11 @@
+.form-wrap{
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+
+}
+
+.input-item:not(:last-child){
+    margin-right: 20px;
+}
+

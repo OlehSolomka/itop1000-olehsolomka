@@ -1,0 +1,23 @@
+<div class="form-wrap">
+    <form class="main" #currencyform>
+        <span class="input-item">
+            <select #firstCurrencySelect (change)="calculateCurrencyValue(firstCurrencySelect)" name="firstSelect" [value]="firstSelectedCurrency"> 
+                <option >USD</option>
+                <option >EUR</option>
+                <option selected>UAH</option>
+            </select>
+            <input name='firstInput' type="number" #firstCurrencyInput [value]="firstInputValue" (change)="calculateCurrencyValue(firstCurrencyInput)">
+        </span>
+     <span class="input-item">
+        <select #secondCurrencySelect (change)="calculateCurrencyValue(secondCurrencySelect)" name="secondSelect" [value]="secondSelectedCurrency"> 
+            <option selected>USD</option>
+            <option >EUR</option>
+            <option >UAH</option>
+        </select>
+        <input name='secondInput' type="number" #secondCurrencyInput [value]="secondInputValue" (change)="calculateCurrencyValue(secondCurrencyInput)">
+     </span>
+    
+    </form>
+</div>
+
+
